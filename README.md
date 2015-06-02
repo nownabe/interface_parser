@@ -19,7 +19,7 @@ Or install it yourself as:
 
 ## Usage
 ```ruby
-pp InterfaceParser.parse_ifconfig(`ifconfig`)
+InterfaceParser.parse_ifconfig(`ifconfig`)
 
 # =>
 {"eno16777984"=>
@@ -47,7 +47,7 @@ pp InterfaceParser.parse_ifconfig(`ifconfig`)
    "ipv6"=>"::1",
    "mac"=>nil}}
 
-pp InterfaceParser.parse_ip_addr(`ip addr`)
+InterfaceParser.parse_ip_addr(`ip addr`)
 
 # =>
 {"lo"=>
